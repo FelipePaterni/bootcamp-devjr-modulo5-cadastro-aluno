@@ -52,6 +52,25 @@ var cursos = [
   },
 ];
 
+
+//save
+function save(){
+    console.log(document.getElementById("selectCurso").value);
+    var alun ={
+        id: alunos.length + 1,
+        name: document.getElementById("inputNome").value,
+        email: document.getElementById("inputEmail").value,
+        telefone: document.getElementById("inputTelefone").value,
+        curso: document.getElementById("selectCurso").value,
+        turno: document.querySelector("input[name='turnoRadios']:checked").value
+
+    }
+    addNewRow(alun);
+    alunos.push(alun);
+    document.getElementById("formAlunos").reset();
+}
+
+
 //on load
 loadAlunos();
 

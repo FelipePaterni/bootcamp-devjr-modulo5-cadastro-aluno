@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <header class="bg-light display-4 text-center p-2">
+    <header class="bg-light display-5 text-center ">
       Cadastro de Alunos
     </header>
 
@@ -68,8 +68,8 @@
                 <div class="col-sm-4">
                   <select
                     class="form-select"
-                    aria-label="Selecione uma categoria"
-                    id="selectCategory"
+                    aria-label="Selecione um Curso"
+                    id="selectCurso"
                     required
                   >
                     <option value="" selected>Escolha:</option>
@@ -88,7 +88,7 @@
                       type="radio"
                       name="turnoRadios"
                       id="turnoRadios1"
-                      value="option1"
+                      value="Manhã"
                       checked
                     />
                     <label class="form-check-label" for="turnoRadios1">
@@ -101,7 +101,7 @@
                       type="radio"
                       name="turnoRadios"
                       id="turnoRadios2"
-                      value="option2"
+                      value=" Tarde"
                     />
                     <label class="form-check-label" for="turnoRadios2">
                       Tarde
@@ -113,7 +113,7 @@
                       type="radio"
                       name="turnoRadios"
                       id="turnoRadios3"
-                      value="option3"
+                      value="Noite"
                     />
                     <label class="form-check-label" for="turnoRadios3">
                       Noite
@@ -131,8 +131,8 @@
             <section>
               <p class="display-6">Alunos Cadastrados:</p>
 
-                 <div class="row">
-                <div class="col-md-10 offset-md-1">
+                 <div class="row mb-5">
+                <div class="offset-1 col-10">
                     <table class="table" id="alunosTable">
                         <thead>
                           <tr>
